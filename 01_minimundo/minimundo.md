@@ -56,3 +56,26 @@ O cadastro do sócio também armazenará sua quantidade atual de pontos no progr
 
 Os dados dos associados serão utilizados nas operações de assinatura, pagamento, emissão de ingressos, controle de presença, movimentação de pontos e resgate de experiências.
 
+## 4. Planos, benefícios e assinaturas
+
+O sistema possuirá diferentes planos de associação inspirados no programa Camisa 7, como Glorioso, Alvinegro, Preto, Branco, Nossa Gente, Joias do Bairro e Cria+.
+
+Cada plano armazenará nome, valor mensal, prioridade para ingressos, percentual de desconto, limite de acompanhantes, faixa etária permitida e indicação de check-in gratuito.
+
+O sistema também permitirá cadastrar benefícios, como descontos em produtos, estacionamento, experiências e vantagens oferecidas por parceiros.
+
+Como um plano pode possuir vários benefícios e um benefício pode pertencer a diferentes planos, será utilizado um relacionamento entre as tabelas de planos e benefícios.
+
+A contratação de um plano será registrada por meio de uma assinatura vinculada ao sócio. A assinatura armazenará a data de início, a próxima renovação, o tipo de cobrança, a renovação automática e sua situação.
+
+O tipo de cobrança poderá ser mensal ou anual. Para assinaturas anuais pagas por PIX, poderá ser aplicado um desconto de 5%.
+
+A situação da assinatura poderá ser ativa, pendente, suspensa ou cancelada. Cada sócio poderá possuir apenas uma assinatura ativa por vez, embora suas assinaturas anteriores permaneçam armazenadas.
+
+O sistema verificará se o plano está ativo e se a idade do associado é compatível com a faixa etária definida antes da contratação.
+
+Alterações de plano ou de situação serão registradas em um histórico contendo os dados anteriores, os novos dados, a data e o motivo da mudança.
+
+
+
+

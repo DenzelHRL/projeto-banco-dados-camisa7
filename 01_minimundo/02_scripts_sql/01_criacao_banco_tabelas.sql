@@ -1,1 +1,0 @@
--- Script de criação do banco de dados e das tabelas

@@ -10,10 +10,7 @@ COLLATE utf8mb4_unicode_ci;
 
 USE camisa7_db;
 
--- =====================================================
 -- 1. TABELA SOCIO
--- =====================================================
-
 CREATE TABLE socio (
     id_socio INT AUTO_INCREMENT,
     nome_completo VARCHAR(150) NOT NULL,
@@ -55,9 +52,8 @@ CREATE TABLE socio (
         )
 );
 
--- =====================================================
+
 -- 2. TABELA PLANO
--- =====================================================
 
 CREATE TABLE plano (
     id_plano INT AUTO_INCREMENT,
@@ -96,9 +92,7 @@ CREATE TABLE plano (
         )
 );
 
--- =====================================================
 -- 3. TABELA BENEFICIO
--- =====================================================
 
 CREATE TABLE beneficio (
     id_beneficio INT AUTO_INCREMENT,
@@ -127,9 +121,8 @@ CREATE TABLE beneficio (
         )
 );
 
--- =====================================================
+
 -- 4. TABELA PLANO_BENEFICIO
--- =====================================================
 
 CREATE TABLE plano_beneficio (
     id_plano INT NOT NULL,

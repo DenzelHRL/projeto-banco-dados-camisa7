@@ -29,3 +29,30 @@ O sistema também permitirá acompanhar a disponibilidade dos setores para cada 
 Em relação ao programa de fidelidade, será possível acompanhar o saldo de pontos de cada sócio, registrar a origem de cada movimentação e controlar a quantidade de vagas disponível nas experiências oferecidas.
 
 As informações armazenadas também poderão ser utilizadas posteriormente para a criação de relatórios gerenciais e de uma proposta de Data Warehouse, permitindo análises sobre assinaturas, pagamentos, ingressos, presença em partidas e resgates de benefícios.
+
+## 3. Cadastro dos sócios-torcedores
+
+O sistema deverá permitir o cadastro dos participantes do programa de sócio-torcedor. Cada associado será identificado por um código único gerado pelo banco de dados.
+
+Para cada sócio, serão armazenados dados como nome completo, CPF, data de nascimento, e-mail, telefone, data de cadastro e situação cadastral.
+
+O CPF e o endereço de e-mail deverão ser únicos. Dessa forma, uma mesma pessoa não poderá possuir dois cadastros utilizando o mesmo CPF ou o mesmo e-mail.
+
+A situação cadastral do sócio poderá ser classificada como ativa, suspensa ou cancelada. Somente associados com situação ativa poderão contratar planos, emitir ingressos e realizar resgates de experiências.
+
+Também serão armazenadas informações referentes ao endereço do associado, incluindo CEP, logradouro, número, complemento, cidade, estado e país.
+
+Os dados de localização poderão ser utilizados para verificar a elegibilidade do sócio para determinados planos. Por exemplo, alguns planos poderão ser destinados a torcedores que residem fora do estado do Rio de Janeiro ou fora do Brasil.
+
+A data de nascimento será utilizada para calcular a idade do associado e verificar se ele atende à faixa etária exigida pelo plano escolhido.
+
+Sócios menores de 18 anos deverão estar vinculados a um responsável legal. Esse responsável também deverá possuir um cadastro no sistema.
+
+O vínculo entre o menor e o responsável será realizado por meio do próprio cadastro de sócios, permitindo que um associado adulto seja indicado como responsável por um ou mais menores.
+
+O sistema não permitirá que um menor seja indicado como responsável legal de outro associado.
+
+O cadastro do sócio também armazenará sua quantidade atual de pontos no programa de fidelidade. Entretanto, qualquer alteração nessa pontuação deverá possuir uma movimentação correspondente, permitindo identificar a origem dos pontos recebidos ou utilizados.
+
+Os dados dos associados serão utilizados nas operações de assinatura, pagamento, emissão de ingressos, controle de presença, movimentação de pontos e resgate de experiências.
+

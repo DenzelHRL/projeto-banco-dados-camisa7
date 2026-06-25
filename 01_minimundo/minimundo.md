@@ -52,7 +52,7 @@ O vínculo entre o menor e o responsável será realizado por meio do próprio c
 
 O sistema não permitirá que um menor seja indicado como responsável legal de outro associado.
 
-O cadastro do sócio também armazenará sua quantidade atual de pontos no programa de fidelidade. Entretanto, qualquer alteração nessa pontuação deverá possuir uma movimentação correspondente, permitindo identificar a origem dos pontos recebidos ou utilizados.
+O saldo de pontos do associado não será armazenado diretamente em seu cadastro. Ele será calculado a partir dos créditos e débitos registrados no histórico de movimentações de pontos.
 
 Os dados dos associados serão utilizados nas operações de assinatura, pagamento, emissão de ingressos, controle de presença, movimentação de pontos e resgate de experiências.
 
@@ -70,7 +70,7 @@ A contratação de um plano será registrada por meio de uma assinatura vinculad
 
 O tipo de cobrança poderá ser mensal ou anual. Para assinaturas anuais pagas por PIX, poderá ser aplicado um desconto de 5%.
 
-A situação da assinatura poderá ser ativa, pendente, suspensa ou cancelada. Cada sócio poderá possuir apenas uma assinatura ativa por vez, embora suas assinaturas anteriores permaneçam armazenadas.
+A situação da assinatura poderá ser ativa, pendente, suspensa ou cancelada. Cada sócio poderá possuir somente uma assinatura atual. As mudanças de plano e as situações anteriores serão preservadas na tabela de histórico da assinatura.
 
 O sistema verificará se o plano está ativo e se a idade do associado é compatível com a faixa etária definida antes da contratação.
 

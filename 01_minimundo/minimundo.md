@@ -112,6 +112,119 @@ Quando um ingresso for emitido, a quantidade disponível no setor da partida ser
 
 O sistema também registrará a data do check-in e da entrada no estádio, impedindo que o mesmo ingresso seja utilizado mais de uma vez.
 
+## 7. Pontos, experiências e resgates
+
+O sistema possuirá um programa de pontos vinculado aos sócios-torcedores.
+
+Os associados poderão receber pontos por pagamentos aprovados, presença em partidas e campanhas promocionais.
+
+Toda entrada ou saída de pontos será registrada em uma movimentação, contendo o sócio, a quantidade, o tipo da movimentação, a origem, a data e uma descrição.
+
+As movimentações poderão ser classificadas como crédito ou débito. O saldo de pontos do associado será obtido pela soma dessas movimentações.
+
+Os pontos poderão ser utilizados no resgate de experiências, como visitas ao estádio, encontros com jogadores, produtos oficiais e participação em sorteios.
+
+Cada experiência armazenará nome, descrição, quantidade de pontos exigida, quantidade de vagas, data e situação.
+
+Um resgate somente poderá ser realizado quando o sócio estiver ativo, possuir pontos suficientes e houver vagas disponíveis.
+
+Quando um resgate for confirmado, os pontos utilizados serão descontados e a quantidade de vagas disponíveis será reduzida.
+
+As informações registradas permitirão consultar o saldo de pontos, as experiências mais procuradas e o histórico de resgates dos associados.
+
+## 8. Principais regras de negócio
+
+Cada sócio deverá possuir CPF e e-mail únicos.
+
+Sócios menores de 18 anos deverão estar vinculados a um responsável legal cadastrado no sistema.
+
+Somente sócios ativos poderão contratar planos, emitir ingressos e resgatar experiências.
+
+Cada sócio poderá possuir somente uma assinatura ativa por vez.
+
+A idade do associado deverá ser compatível com a faixa etária definida no plano escolhido.
+
+Somente planos ativos poderão ser contratados.
+
+Toda alteração de plano ou de situação da assinatura deverá ser registrada no histórico.
+
+Cada mensalidade estará vinculada a uma assinatura.
+
+Um pagamento aprovado deverá atualizar a mensalidade para paga.
+
+Pagamentos aprovados poderão gerar pontos para o associado.
+
+Mensalidades atrasadas por mais de dez dias poderão causar a suspensão da assinatura.
+
+O valor do ingresso será calculado de acordo com o preço do setor e o desconto do plano.
+
+Planos com check-in gratuito poderão emitir ingresso titular com valor igual a zero.
+
+Não será possível emitir ingressos quando não houver disponibilidade no setor da partida.
+
+A emissão de um ingresso deverá reduzir a quantidade disponível no setor.
+
+Cada ingresso poderá ser utilizado somente uma vez.
+
+O resgate de uma experiência dependerá da existência de pontos e vagas suficientes.
+
+Toda movimentação de pontos deverá possuir uma origem registrada.
+
+## 9. Consultas e relatórios previstos
+
+O banco de dados permitirá gerar consultas relacionadas às principais operações do programa.
+
+Será possível consultar os sócios ativos e seus respectivos planos.
+
+Também será possível identificar associados com mensalidades em atraso.
+
+O sistema permitirá calcular a receita obtida por plano ou por período.
+
+As informações das partidas poderão ser utilizadas para consultar a quantidade de ingressos emitidos e a ocupação dos setores.
+
+Os registros de fidelidade permitirão consultar os pontos acumulados, os resgates realizados e as experiências mais procuradas.
+
+Essas consultas serão utilizadas na criação de views e também servirão como base para uma proposta de Data Warehouse.
+
+O Data Warehouse poderá analisar informações de assinaturas, pagamentos, ingressos e resgates ao longo do tempo.
+
+## 10. Recursos de banco de dados utilizados
+
+O projeto será desenvolvido no MySQL.
+
+As tabelas utilizarão chaves primárias para identificar seus registros e chaves estrangeiras para representar os relacionamentos.
+
+Serão utilizadas restrições de unicidade para evitar a repetição de CPF, e-mail e outros dados que devam ser exclusivos.
+
+Também serão utilizadas validações para impedir valores negativos, situações inválidas e relacionamentos inconsistentes.
+
+O projeto possuirá cinco views para facilitar consultas frequentes.
+
+Serão desenvolvidas cinco functions para cálculos como idade, valor do ingresso, multa, saldo de pontos e valor anual do plano.
+
+Também serão criadas cinco triggers para automatizar operações importantes, como histórico de assinatura, atualização de pagamento, concessão de pontos, controle de ingressos e resgate de experiências.
+
+Serão aplicados índices em campos utilizados com frequência em filtros, relacionamentos e pesquisas.
+
+A estratégia de otimização será demonstrada por meio da comparação de uma consulta antes e depois da criação de índices.
+
+Também será apresentada uma estratégia de backup e segurança para proteger os dados armazenados.
+
+## 11. Limites do sistema
+
+O projeto será uma simulação acadêmica inspirada no programa Camisa 7 e utilizará dados fictícios.
+
+O sistema não terá como objetivo reproduzir todas as regras do programa oficial.
+
+Não serão controlados contratos, salários, transferências ou dados profissionais dos jogadores.
+
+Também não farão parte do escopo as escalações, os treinamentos, a classificação dos campeonatos ou a administração financeira completa do clube.
+
+A venda de ingressos para pessoas que não sejam sócias também não será considerada.
+
+O foco do sistema será o gerenciamento dos sócios-torcedores, seus planos, pagamentos, ingressos, pontos e experiências.
+
+
 Essas informações permitirão consultar a ocupação dos setores, os ingressos emitidos e a presença dos sócios nas partidas.
 
 

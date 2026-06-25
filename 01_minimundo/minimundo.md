@@ -96,5 +96,24 @@ Sócios com mensalidades atrasadas por mais de dez dias poderão ter sua assinat
 
 Essas informações permitirão gerar consultas sobre inadimplência, pagamentos realizados e receita arrecadada por plano ou período.
 
+## 6. Partidas, setores e ingressos
+
+O sistema armazenará as partidas disponibilizadas aos sócios, informando competição, adversário, data, estádio e situação do evento.
+
+Cada estádio será dividido em setores com capacidade definida. Para cada partida, serão cadastrados o preço-base e a quantidade de ingressos disponíveis em cada setor.
+
+A emissão de ingresso será permitida apenas para sócios ativos, com assinatura ativa, e enquanto houver disponibilidade no setor escolhido.
+
+O valor final do ingresso será calculado com base no preço do setor e no desconto oferecido pelo plano. Nos planos com check-in gratuito, o ingresso do titular poderá ter valor igual a zero.
+
+Cada ingresso estará vinculado a um sócio, uma partida e um setor. Também serão registrados seu tipo, valor original, desconto aplicado, valor final e situação.
+
+Quando um ingresso for emitido, a quantidade disponível no setor da partida será reduzida automaticamente.
+
+O sistema também registrará a data do check-in e da entrada no estádio, impedindo que o mesmo ingresso seja utilizado mais de uma vez.
+
+Essas informações permitirão consultar a ocupação dos setores, os ingressos emitidos e a presença dos sócios nas partidas.
+
+
 
 

@@ -1,8 +1,4 @@
 -- Script de criação do banco de dados e das tabelas
-```sql
-
-
-DROP DATABASE IF EXISTS camisa7_db;
 
 CREATE DATABASE camisa7_db
 CHARACTER SET utf8mb4

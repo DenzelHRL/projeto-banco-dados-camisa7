@@ -76,6 +76,25 @@ O sistema verificará se o plano está ativo e se a idade do associado é compat
 
 Alterações de plano ou de situação serão registradas em um histórico contendo os dados anteriores, os novos dados, a data e o motivo da mudança.
 
+## 5. Mensalidades e pagamentos
+
+As cobranças das assinaturas serão registradas na tabela de mensalidades. Cada mensalidade estará vinculada a uma assinatura e armazenará o mês de referência, a data de vencimento, o valor original, a multa, os juros, o valor total e a situação da cobrança.
+
+A situação da mensalidade poderá ser pendente, paga, atrasada ou cancelada.
+
+Quando a data de vencimento for ultrapassada sem pagamento, a cobrança poderá ser considerada atrasada. O sistema permitirá calcular multa e juros com base na quantidade de dias de atraso.
+
+Os pagamentos serão armazenados separadamente das mensalidades, permitindo registrar tentativas de pagamento aprovadas, recusadas ou canceladas.
+
+Cada pagamento armazenará a data, o valor pago, a forma de pagamento, o código da transação e sua situação.
+
+As formas de pagamento disponíveis serão PIX, cartão de crédito, cartão de débito e boleto.
+
+Quando um pagamento for aprovado, o sistema deverá atualizar automaticamente a mensalidade para paga e registrar os pontos concedidos ao sócio.
+
+Sócios com mensalidades atrasadas por mais de dez dias poderão ter sua assinatura suspensa até a regularização da dívida.
+
+Essas informações permitirão gerar consultas sobre inadimplência, pagamentos realizados e receita arrecadada por plano ou período.
 
 
 

@@ -8,7 +8,7 @@ Como o banco de dados deste projeto possui tamanho pequeno e foi desenvolvido no
 
 ## 2. Tipo de backup adotado
 
-Será utilizado o backup lógico completo por meio da ferramenta `mysqldump`.
+Será utilizado o backup lógico completo por meio da ferramenta `mysqldump`
 
 O backup lógico gera um arquivo contendo os comandos SQL necessários para recriar as tabelas e restaurar os dados do banco.
 
